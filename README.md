@@ -56,25 +56,31 @@ PROGRAM
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
-module basic_gates(
-    input A, B,
-    output y0, y1, y2, y3, y4, y5
-);
-
-and  g0 (y0, A, B);
-or   g1 (y1, A, B);
-not  g2 (y2, A);
-nand g3 (y3, A, B);
-nor  g4 (y4, A, B);
-xor  g5 (y5, A, B);`
-
+module de1(a, b, c1, c2, c3, c4, c5,c6 ,c7);
+input a, b;
+output c1, c2, c3, c4, c5, c6, c7;
+assign c1 = ~a;
+assign c2 = a & b;
+assign c3 = a | b;
+assign c4 = ~(a & b);
+assign c5 = ~(a | b);
+assign c6 = a ^ b;
+assign c7 = ~(a ^ b);
 endmodule
+
+
 Developed by: SUVETHA K M S RegisterNumber: 25014228
 
 Logic symbol & Truthtable image
+<img width="431" height="826" alt="image" src="https://github.com/user-attachments/assets/2b5697bd-9452-46bc-854b-87c51ee6a82a" />
 
-RTL realization Output: Screenshot 2026-03-12 213812
+RTL realization Output: 
 
-RTL Screenshot 2026-03-12 215854
+<img width="1438" height="773" alt="image" src="https://github.com/user-attachments/assets/941d24b0-adef-429b-ba56-8f2225074fe4" />
 
-Result: The Truth table of logic gates in Quartus II using Verilog programming is verified.
+
+RTL 
+<img width="1913" height="971" alt="image" src="https://github.com/user-attachments/assets/aa47bb68-0799-4d8c-bb59-88f69fad2ed2" />
+
+Result:
+The Truth table of logic gates in Quartus II using Verilog programming is verified.
